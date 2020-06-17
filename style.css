@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+}
+
+.articles{
+    max-width: 100.1rem;
+    padding: 0 10%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 0.8fr 1.2fr;
+}
+
+.leftArticles{
+    cursor: pointer;
+    grid-column: 1/2;
+}
+
+.rightArticles{
+    cursor: pointer;
+    grid-column: 2/3;
+}
+
+@media (max-width:768px) {
+    .articles{grid-template-columns: 1fr;}
+    .rightArticles{grid-column: auto;}
+    .leftArticles{width: 100%;}
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.responsiveLogo{
+    cursor: pointer;
+}
+
+.subtitle{
+    left: 10%;
+    display: inline-flex;
+    font-family: BentonSans;
+    color: #333;
+    fill: #333;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    position: relative;
+    background-color: #f7f7f7;
+    touch-action: none;
+    width: 80%;
+}
+
+.sections{
+    list-style-type: none;
+    font-family: BentonSans;
+    display: inline-flex;
+    padding-bottom: .8rem;
+    padding-top: .8rem;
+    font-size: 0.69rem;
+    line-height: 1.5rem;
+    justify-content: space-around;
+    width: 80%;
+    align-items: center;
+    max-width: 100%;
+    flex-flow: wrap;
+    overflow-x: hidden;
+    flex-basis: calc((100% - 231px) / 12 * 12 + 231px);
+}
+
+@media (max-width: 768px){
+    .sections{display: none;}
+}
+
+.sections li a{
+    font-size: smaller;
+    text-decoration: none;
+    color: #686868;
+    padding: .8rem .6rem;
+}
+
+.sections li a:hover{
+    color:#68686887;
+}
+
+.coronaContainer{
+    cursor: pointer;
+width: 80%;
+max-width: 97.4rem;
+margin: 0 auto 0;
+text-align: left;
+position: relative;
+}
+
+.coronaTitle{
+    margin-left: 10%;
+    display: inline-block;
+    vertical-align: middle;
+    border-bottom: 0.2rem solid #FE4342!important;
+    color: #000000!important;
+}
+
+.corona{
+text-align: left;
+border-top: 0.1rem solid black;
+border-bottom: 0.1rem dotted black;
+}
+
+.coronaUl{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+    position: relative;
+}
+
+.coronaUl li{
+display: flex;
+flex-flow: wrap;
+justify-content: space-evenly;
+font-family: BentonSans;
+list-style: none;   
+float: left;
+width: calc(19.5% - 0.1rem);
+position: relative;
+height: 6rem;
+box-sizing: border-box;
+border-left: none;
+padding-top: 1%;
+padding-left: 5.8rem;
+margin-bottom: 3%;
+}
+
+.coronaUl li a img{
+    width: 30%;
+    height:auto;
+}
+
+.questions{
+list-style: none;
+color: #333;
+position: absolute;
+left: 1.25rem;
+height: auto;
+width: 4rem;
+}
+
+.subcorona{
+    display: flex;
+    padding: 0.5rem;
+    justify-content: space-around;
+    align-items: center;
+font-family: BentonSans;
+border-bottom: 0.1rem solid black;
+}
+
+.subcorona ul{
+    width: 40%;
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media (max-width:768px){
+    .subcorona{display:none}
+}
+
+.news img{
+    width: 100%;
+    height: auto;
+}
+
+.news h2{
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 700;
+    width: 100%;
+    letter-spacing: 0.616px;
+    color: #2d2d2d;
+    fill: #2d2d2d;
+    stroke: #2d2d2d;
+}
+
+.news h3{
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 700;
+    width: 100%;
+    letter-spacing: 0.616px;
+    color: #2d2d2d;
+    fill: #2d2d2d;
+    stroke: #2d2d2d;
+}
+
+.news h3:hover{
+    opacity: .8;
+}
+
+.news h2:hover{
+    opacity: .8;
+}
+
+.headerUp{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.author a{
+    font-size: 0.8rem;
+    line-height: 2.6rem;
+    color: #2d2d2d;
+    fill: #2d2d2d;
+    stroke: #2d2d2d;
+}
+.author a:hover{
+    opacity: .8;
+}
+
+.description p{
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 0.2rem;
+    display: block;
+    color: #686868;
+    fill: #686868;
+}
